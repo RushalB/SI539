@@ -1,0 +1,174 @@
+
+.container{
+        border: 2px blue solid;
+        height: 500px;
+        width: 500px;
+        display: grid;
+        grid-template-columns: 2fr 25% 1fr;
+        margin: 3px 10px;
+     
+}
+/*  Problem 1  */
+
+/* #maincontent {
+    display: grid;
+    justify-items: center;
+}
+
+figure img {
+    width: 100%;
+}
+
+.container {
+    text-transform: capitalize;
+    text-align: center;
+} */
+   
+/* @media screen and (max-width: 649px) {
+
+
+    .container {
+        display: grid;
+        grid-template-columns: minmax(100%, 375px);
+        width: 70vw;
+        max-width: 375px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+
+
+
+
+} */
+
+/* Problem 2  */
+ /* @media screen and (min-width: 650px) {
+    .container {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        justify-content: space-evenly;
+    }
+
+
+
+    .container>*:nth-child(2n) {
+
+        grid-column: 2 / span 2;
+    }
+
+    .container>*:nth-child(2n + 1) {
+
+        grid-column: 1 / span 2;
+    }
+} */
+/*  Problem 3  */
+/* @media screen and (min-width: 750px) {
+    .container {
+        display: grid;
+        
+        grid-template-columns: repeat(4, 20%);
+        justify-content: space-between;
+    }
+
+    .container>*:nth-child(2n + 1) {
+
+        grid-column: 1 / span 2;
+    }
+
+    .container>*:nth-child(2n) {
+
+        grid-column: 3 / span 2;
+    }
+
+    .container>*:last-child {
+        grid-column: 2 / span 2
+    }
+
+
+
+}  */
+/*  Problem 4  */
+/* @media screen and (min-width: 900px) {
+    figure img {
+
+        height: 100%;
+    }
+
+    
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    figure  {
+        width: 20%;
+    }
+    .container>*:nth-child(4n) {
+
+        width: 40%;
+        border: 10px solid black;
+    }
+
+    .container figure:nth-child(2) {
+        order: 1;
+    }
+
+
+
+
+} */
+/*  Problem 5  */
+/* @media screen and (min-width: 1050px) {
+    .container>*:nth-child(n) {
+
+        width: 75%;
+        margin-bottom: 20px;
+
+    }
+
+    .container figure:nth-child(2) {
+        order: 0;
+    }
+    figure  {
+        width: 75%;
+       
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        width: 95%;
+        overflow: hidden;
+    }
+    
+
+    .container>*:nth-child(2n) {
+
+        grid-column: 2 / span 1;
+        transform: rotate(15deg);
+
+        
+    }
+    
+    .container>*:nth-child(2n + 1) {
+
+        grid-column: 1 / span 1;
+        transform: rotate(-15deg)
+    }
+
+    .container>*:last-child {
+        grid-column: 1 / span 2;
+        transform: rotate(0deg)
+        
+    }
+
+
+} */
+
+/* Problem 6 */
