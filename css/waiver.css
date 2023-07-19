@@ -1,16 +1,14 @@
-
-.container{
-        border: 2px blue solid;
-        height: 500px;
-        width: 500px;
-        display: grid;
-        grid-template-columns: 2fr 25% 1fr;
-        margin: 3px 10px;
-     
-}
 /*  Problem 1  */
 
-/* #maincontent {
+@keyframes mymove {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+  .logo{
+    animation: mymove 10s;
+  }
+
+#maincontent {
     display: grid;
     justify-items: center;
 }
@@ -22,35 +20,39 @@ figure img {
 .container {
     text-transform: capitalize;
     text-align: center;
-} */
-   
-/* @media screen and (max-width: 649px) {
-
-
-    .container {
-        display: grid;
-        grid-template-columns: minmax(100%, 375px);
-        width: 70vw;
-        max-width: 375px;
-        text-transform: capitalize;
-        text-align: center;
-    }
+}
 
 
 
 
+.container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: min(70vw, 375px);
+    text-transform: capitalize;
+    text-align: center;
+}
 
-} */
+
+
+
+
+
 
 /* Problem 2  */
- /* @media screen and (min-width: 650px) {
+@media screen and (min-width: 650px) {
     .container {
+        
         width: 95%;
         display: grid;
         grid-template-columns: repeat(3, 25%);
         justify-content: space-evenly;
+        background-image: url("../images/concrete_seamless.png");
     }
 
+    *:focus{
+        top:0px
+    }
 
 
     .container>*:nth-child(2n) {
@@ -62,12 +64,13 @@ figure img {
 
         grid-column: 1 / span 2;
     }
-} */
+}
+
 /*  Problem 3  */
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
     .container {
         display: grid;
-        
+
         grid-template-columns: repeat(4, 20%);
         justify-content: space-between;
     }
@@ -88,15 +91,16 @@ figure img {
 
 
 
-}  */
+}
+
 /*  Problem 4  */
-/* @media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
     figure img {
 
         height: 100%;
     }
 
-    
+
 
     .container {
         display: flex;
@@ -105,9 +109,10 @@ figure img {
         justify-content: space-evenly;
     }
 
-    figure  {
+    figure {
         width: 20%;
     }
+
     .container>*:nth-child(4n) {
 
         width: 40%;
@@ -121,9 +126,10 @@ figure img {
 
 
 
-} */
+}
+
 /*  Problem 5  */
-/* @media screen and (min-width: 1050px) {
+@media screen and (min-width: 1050px) {
     .container>*:nth-child(n) {
 
         width: 75%;
@@ -134,28 +140,30 @@ figure img {
     .container figure:nth-child(2) {
         order: 0;
     }
-    figure  {
+
+    figure {
         width: 75%;
-       
+
 
     }
-    .container{
+
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         width: 95%;
         overflow: hidden;
     }
-    
+
 
     .container>*:nth-child(2n) {
 
         grid-column: 2 / span 1;
         transform: rotate(15deg);
 
-        
+
     }
-    
+
     .container>*:nth-child(2n + 1) {
 
         grid-column: 1 / span 1;
@@ -165,10 +173,14 @@ figure img {
     .container>*:last-child {
         grid-column: 1 / span 2;
         transform: rotate(0deg)
-        
     }
 
 
-} */
+}
 
 /* Problem 6 */
+@media (prefers-reduced-motion) {
+    .logo{
+        animation: none;
+    }
+  }
